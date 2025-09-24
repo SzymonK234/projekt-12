@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        body > div:nth-of-type(1) {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap: 20px;
+        }
+        body > div:nth-of-type(1) img {
+            height: 100px;
+            width: auto;
+        }
+        ul {
+            display: grid;
+            grid-auto-flow: column;
+            list-style: none;
+            padding: 0;
+            gap: 2px;
+        }
+        body > div:nth-of-type(2) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        body > div:nth-of-type(2) img {
+            height: 150px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Grid</h1>
+        <img src="ibanez1.jpg" alt="Przykładowe zdjęcie">
+    </div>
+
+    <ul>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+    </ul>
+
+    <div>
+        <div><img src="ibanez1.jpg" alt="Obrazek 1"></div>
+    </div>
+    <div>
+        <div><img src="ibanez2.jpg" alt="Obrazek 2"></div>
+    </div>
+    <a href="index.html">Strona Główna</a>
+</body>
+</html>
